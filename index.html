@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons8-weather-96.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>App Weather</title>
+  </head>
+  <body>
+    <header>
+      <section class="city-search">
+        <input
+          class="header-input"
+          type="text"
+          id="city-search-input"
+          placeholder="Temperatura de qual cidade?"
+        />
+        <button class="header-btn">
+          <img
+            class="header-img"
+            src="./assets/search-icon.svg"
+            alt="Ícone de uma lupa"
+          />
+        </button>
+      </section>
+
+      <div class="current-date">...</div>
+      <div class="city-name">...</div>
+    </header>
+
+    <main class="current-temperature">
+      <img class="weather-icon" src="./assets/loading-icon.svg" alt="" />
+      <section class="temperature-description">...</section>
+      <section class="temperature-info-label">Tempo agora</section>
+      <section class="dinamic-currente-temperature">...</section>
+    </main>
+
+    <footer class="footer-container">
+      <section class="temperature-details">
+        <div class="temperature-details-item">
+          <div class="temperature-details-label">Vento</div>
+          <div class="temperature-details-value" id="wind-speed">...</div>
+        </div>
+
+        <div class="temperature-details-item">
+          <div class="temperature-details-label">Sensação</div>
+          <div class="temperature-details-value" id="feels-like-temperature">...</div>
+        </div>
+
+        <div class="temperature-details-item">
+          <div class="temperature-details-label">Umidade</div>
+          <div class="temperature-details-value" id="current-humidity">...</div>
+        </div>
+      </section>
+
+      <section class="sunset-sunrise">
+        <div class="sunset-sunrise-item">
+          <img
+            class="sunset-sunrise-icon"
+            src="./assets/sunrise.svg"
+            alt="Nascer do Sol"
+          />
+          <div class="sunset-sunrise-value" id="sunrise-item">...</div>
+        </div>
+
+        <div class="sunset-sunrise-item">
+          <img
+            class="sunset-sunrise-icon"
+            src="./assets/sunset.svg"
+            alt="Pôr do Sol"
+          />
+          <div class="sunset-sunrise-value" id="sunset-item">...</div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
